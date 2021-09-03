@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!--Title of the form-->
+  <h1 id="title">Alejandro Riveros Survey Form</h1>
+
+  <!--A short description of the form-->
+  <p id="description">This is the a survey form created by Alejandro Riveros in order to know who you are.</p>
+
+  <!--Here we are going to put everything related to the form-->
+  <form id="survey-form">
+
+        <!--Label-name for the field where user will enter his name
+        The Name is required-->
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Please, enter your name here" required>
+
+        <!--Label-email for the field where user will enter his email
+        The Email is required-->
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="text" placeholder="Please, enter your e-mail here" required>
+
+        <!--number-label for the field where user will enter his age
+        The field is optional but if the user enter an age out of the range 12-89 he will get an error-->
+        <label id="number-label" for="number">Age (Optional)</label>
+        <input id="number" type="number" placeholder="Please, enter your age here" min="12" max="89">
+        
+        <!--Dropdown list with some roles user can select-->
+        <select id="dropdown" required>
+            <!--A value the user can't select but indicates to the user what to do-->
+            <option disabled selected value>Select your current role</option>
+            <!--List of options-->
+            <option value="student">Student</option>
+            <option value="fullJob">Full time Job</option>
+            <option value="partJob">Part time Job</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select> 
+
+  </form>  
+</body>
+</html>
